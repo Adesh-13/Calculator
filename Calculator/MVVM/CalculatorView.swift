@@ -13,6 +13,8 @@ struct CalculatorView: View {
     @State private var input2 = ""
     
     var body: some View {
+        Text("Calculator")
+            .bold()
         VStack(spacing: 16) {
             TextField("Enter first number", text: $input1)
                 .keyboardType(.decimalPad)
