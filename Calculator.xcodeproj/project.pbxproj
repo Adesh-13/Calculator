@@ -1,4 +1,6 @@
 // !$*UTF8*$!
+// Fixing formatting issue
+
 {
 	archiveVersion = 1;
 	classes = {
