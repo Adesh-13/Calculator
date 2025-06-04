@@ -5,13 +5,41 @@
 //  Created by Adesh Newaskar on 04/06/25.
 //
 
-import Testing
+
+import XCTest
 @testable import Calculator
 
-struct CalculatorTests {
+final class CalculatorTests: XCTestCase {
+    var viewModel: CalculatorViewModel!
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    override func setUp() {
+        super.setUp()
+        viewModel = CalculatorViewModel()
     }
 
+    func testAddition() {
+        viewModel.calculate(5, 3, operation: .add)
+        XCTAssertEqual(viewModel.result, 8)
+    }
+
+    func testSubtraction() {
+        viewModel.calculate(5, 3, operation: .subtract)
+        XCTAssertEqual(viewModel.result, 2)
+    }
+
+    func testMultiplication() {
+        viewModel.calculate(5, 3, operation: .multiply)
+        XCTAssertEqual(viewModel.result, 15)
+    }
+
+    func testDivision() {
+        viewModel.calculate(6, 3, operation: .divide)
+        XCTAssertEqual(viewModel.result, 2)
+    }
+
+    func testDivisionByZero() {
+        viewModel.calculate(6, 0, operation: .divide)
+        XCTAssertEqual(viewModel.result, 0)
+    }
 }
+
