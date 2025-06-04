@@ -1,5 +1,5 @@
 // !$*UTF8*$!
-// Fixing formatting issue
+// Fixing formatting issues
 
 {
 	archiveVersion = 1;
