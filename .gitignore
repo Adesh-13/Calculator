@@ -1,0 +1,79 @@
+# -----------------------
+# Xcode-related
+# -----------------------
+DerivedData/
+build/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/xcshareddata/WorkspaceSettings.xcsettings
+
+# -----------------------
+# User Settings
+# -----------------------
+*.xcuserdatad
+*.DS_Store
+*.idea/
+*.swiftsourceinfo
+*.moved-aside
+
+# -----------------------
+# Swift Package Manager
+# -----------------------
+.build/
+.swiftpm/
+Package.resolved
+
+# -----------------------
+# CocoaPods (if used)
+# -----------------------
+Pods/
+Podfile.lock
+
+# -----------------------
+# Carthage (if used)
+# -----------------------
+Carthage/
+Carthage/Build/
+
+# -----------------------
+# Firebase
+# -----------------------
+# 🔐 Contains credentials – NEVER commit this!
+GoogleService-Info.plist
+
+# -----------------------
+# Bitrise
+# -----------------------
+bitrise.yml
+.bitrise.secrets.yml
+
+# -----------------------
+# Fastlane (if used)
+# -----------------------
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# -----------------------
+# Test Results & Logs
+# -----------------------
+TestResults/
+*.log
+*.crash
+
+# -----------------------
+# Env / Secrets
+# -----------------------
+.env
+*.key
+*.pem
+
+# -----------------------
+# Playground files
+# -----------------------
+timeline.xctimeline
+playground.xcworkspace
