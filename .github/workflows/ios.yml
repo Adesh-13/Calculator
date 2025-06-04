@@ -22,8 +22,8 @@ jobs:
     - name: Build and Test
       run: |
         xcodebuild clean test \
-        -project CalculatorApp.xcodeproj \
-        -scheme CalculatorApp \
+        -project Calculator.xcodeproj \
+        -scheme Calculator \
         -destination "platform=iOS Simulator,name=iPhone 14"
 
 
