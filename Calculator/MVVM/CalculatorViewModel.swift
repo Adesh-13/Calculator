@@ -13,7 +13,7 @@ class CalculatorViewModel: ObservableObject {
     func calculate(_ a: Double, _ b: Double, operation: Operation) {
         switch operation {
         case .add:
-            result = a + b
+            result = a - b
         case .subtract:
             result = a - b
         case .multiply:
